@@ -1,21 +1,23 @@
 import React from "react";
 
+import Nav from "./components/Nav";
+import Profile from "./pages/Profile";
+import Intro from "./pages/Intro";
+import Yentube from "./pages/Yentube";
+import Netflix from "./pages/Netflix";
+import Cards from "./pages/Cards";
+
 function App() {
   return (
-    <div className="App">
-      <header className="App-header bg-red-700">
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="text-white text-2xl font-bold ">
+      <Nav />
+      <article className=" w-4/5">
+        <Profile />
+        <Intro />
+        <Yentube />
+        <Netflix />
+        <Cards />
+      </article>
     </div>
   );
 }
