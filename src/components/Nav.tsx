@@ -3,70 +3,78 @@ import { Link } from "react-scroll";
 
 const Nav = () => {
   return (
-    <div className="flex items-center fixed top-0 right-0 w-1/5 h-screen bg-yellow-500 cursor-pointer">
-      <ul className="w-full text-7xl  ">
-        <li className="flex flex-col items-center h-full leading-loose ">
+    <div className="fixed top-0 w-full bg-yellow-500 2xl:flex items-center 2xl:right-0 2xl:w-1/5 2xl:h-screen">
+      <ul className="w-full flex text-3xl 2xl:text-6xl 2xl:flex-col">
+        <li className="flex flex-row items-center leading-loose ">
           <Link
             to="profile"
             spy={true}
             smooth={true}
             duration={300}
-            className="w-full pl-8 hover:bg-black "
-            activeClass="w-full pl-8 bg-black cursor-default"
+            // className="w-full pl-8 hover:bg-black "
+            // activeClass="w-full pl-8 bg-black cursor-default"
+            className="w-full px-7 hover:bg-black cursor-pointer "
+            activeClass="bg-black cursor-default"
           >
             Profile
           </Link>
         </li>
-        <li className="flex flex-col  items-center leading-loose">
+
+        <li className="flex flex-row items-center leading-loose 2xl:flex-col">
           <Link
             to="projects"
             spy={true}
             smooth={true}
             duration={100}
-            className="w-full pl-8 hover:bg-black "
-            activeClass="w-full pl-8 bg-black cursor-default"
+            className="w-full px-5 hover:bg-black cursor-pointer "
+            activeClass="w-full px-8 bg-black cursor-default"
           >
             Projects
           </Link>
-
-          <ul className="w-full text-4xl  leading-loose">
-            <li className="group flex justify-center items-center relative">
-              <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-6 h-6 bg-red-600 rounded-full  group-hover:opacity-0 transition ease-in delay-150 duration-300" />
+          <ul className="flex h-full text-2xl 2xl:flex 2xl:flex-col 2xl:w-full 2xl:text-4xl">
+            <li className="group flex relative leading-loose cursor-pointer">
               <Link
                 to="yentube"
                 spy={true}
                 smooth={true}
                 duration={100}
-                className="w-full bg-red-600 text-center opacity-0 group-hover:opacity-100 transition ease-in-out delay-150 duration-300"
-                activeClass="opacity-100 w-full bg-black z-10 cursor-default"
+                className="flex items-center w-12 h-full px-3 transition ease-in delay-150 duration-300 group-hover:bg-black sm:w-full sm:justify-center"
+                activeClass="bg-black cursor-default sm:[&_div]:opacity-0 [&_span]:opacity-100"
               >
-                Yentube
+                <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-5 h-5 bg-red-600 rounded-full transition ease-in delay-150 duration-300 sm:group-hover:opacity-0  2xl:w-6 2xl:h-6" />
+                <span className="hidden sm:inline opacity-0 transition ease-in delay-150 duration-300 group-hover:opacity-100">
+                  Yentube
+                </span>
               </Link>
             </li>
-            <li className="group flex justify-center items-center relative">
-              <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-6 h-6 bg-red-600 rounded-full  group-hover:opacity-0 transition ease-in delay-150 duration-300" />
+            <li className="group flex relative leading-loose cursor-pointer">
               <Link
                 to="netflix"
                 spy={true}
                 smooth={true}
                 duration={100}
-                className="w-full bg-red-600 text-center opacity-0 group-hover:opacity-100 transition ease-in-out delay-150 duration-300"
-                activeClass="opacity-100 w-full bg-black z-10 cursor-default"
+                className="flex items-center w-12 h-full px-3 transition ease-in delay-150 duration-300 group-hover:bg-black sm:w-full sm:justify-center"
+                activeClass="bg-black cursor-default sm:[&_div]:opacity-0 [&_span]:opacity-100"
               >
-                Netflix
+                <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-5 h-5 bg-red-600 rounded-full transition ease-in delay-150 duration-300 sm:group-hover:opacity-0  2xl:w-6 2xl:h-6" />
+                <span className="hidden sm:inline opacity-0 transition ease-in delay-150 duration-300 group-hover:opacity-100">
+                  netflix
+                </span>
               </Link>
             </li>
-            <li className="group flex justify-center items-center relative">
-              <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-6 h-6 bg-red-600 rounded-full  group-hover:opacity-0 transition ease-in delay-150 duration-300" />
+            <li className="group flex relative leading-loose cursor-pointer">
               <Link
                 to="cards"
                 spy={true}
                 smooth={true}
                 duration={100}
-                className="w-full bg-red-600 text-center opacity-0 group-hover:opacity-100 transition ease-in-out delay-150 duration-300"
-                activeClass="opacity-100 w-full bg-black z-10 cursor-default"
+                className="flex items-center w-12 h-full px-3 transition ease-in delay-150 duration-300 group-hover:bg-black sm:w-full sm:justify-center"
+                activeClass="bg-black cursor-default sm:[&_div]:opacity-0 [&_span]:opacity-100"
               >
-                Cards
+                <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-5 h-5 bg-red-600 rounded-full transition ease-in delay-150 duration-300 sm:group-hover:opacity-0  2xl:w-6 2xl:h-6" />
+                <span className="hidden sm:inline opacity-0 transition ease-in delay-150 duration-300 group-hover:opacity-100">
+                  cards
+                </span>
               </Link>
             </li>
           </ul>
