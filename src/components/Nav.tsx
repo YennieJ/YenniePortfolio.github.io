@@ -32,7 +32,7 @@ const Nav = () => {
           <ul className="flex h-full text-2xl 2xl:flex 2xl:flex-col 2xl:w-full 2xl:text-4xl">
             <li className="group flex relative leading-loose cursor-pointer">
               <Link
-                to="Yentube"
+                to="Portfolio"
                 spy={true}
                 smooth={true}
                 duration={100}
@@ -41,37 +41,7 @@ const Nav = () => {
               >
                 <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-5 h-5 bg-red-600 rounded-full transition ease-in delay-150 duration-300 sm:group-hover:opacity-0  2xl:w-6 2xl:h-6" />
                 <span className="hidden sm:inline opacity-0 transition ease-in delay-150 duration-300 group-hover:opacity-100">
-                  Yentube
-                </span>
-              </Link>
-            </li>
-            <li className="group flex relative leading-loose cursor-pointer">
-              <Link
-                to="Netflix"
-                spy={true}
-                smooth={true}
-                duration={100}
-                className="flex items-center w-12 h-full px-3 transition ease-in delay-150 duration-300 group-hover:bg-black sm:w-full sm:justify-center"
-                activeClass="bg-black cursor-default sm:[&_div]:opacity-0 [&_span]:opacity-100"
-              >
-                <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-5 h-5 bg-red-600 rounded-full transition ease-in delay-150 duration-300 sm:group-hover:opacity-0  2xl:w-6 2xl:h-6" />
-                <span className="hidden sm:inline opacity-0 transition ease-in delay-150 duration-300 group-hover:opacity-100">
-                  netflix
-                </span>
-              </Link>
-            </li>
-            <li className="group flex relative leading-loose cursor-pointer">
-              <Link
-                to="Cards"
-                spy={true}
-                smooth={true}
-                duration={100}
-                className="flex items-center w-12 h-full px-3 transition ease-in delay-150 duration-300 group-hover:bg-black sm:w-full sm:justify-center"
-                activeClass="bg-black cursor-default sm:[&_div]:opacity-0 [&_span]:opacity-100"
-              >
-                <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-5 h-5 bg-red-600 rounded-full transition ease-in delay-150 duration-300 sm:group-hover:opacity-0  2xl:w-6 2xl:h-6" />
-                <span className="hidden sm:inline opacity-0 transition ease-in delay-150 duration-300 group-hover:opacity-100">
-                  cards
+                  Portfolio
                 </span>
               </Link>
             </li>

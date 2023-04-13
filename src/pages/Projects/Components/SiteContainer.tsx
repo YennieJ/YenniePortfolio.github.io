@@ -1,32 +1,43 @@
 import React from "react";
 import { AiFillGithub, AiOutlineLink } from "react-icons/ai";
 
-const SiteContainer = () => {
-  const onClick = (
-    e: React.BaseSyntheticEvent<
-      MouseEvent,
-      EventTarget & SVGElement,
-      EventTarget
-    >,
-    urlName: string
-  ) => {
-    const url =
-      urlName === "git" ? "https://www.google.com" : "https://www.naver.com";
+interface ISiteContainer {
+  CD?: boolean;
+  projectName: string;
+}
 
-    e.stopPropagation();
+const SiteContainer = ({ CD, projectName }: ISiteContainer) => {
+  const onClick = (urlName: string) => {
+    const url: any =
+      (projectName === "Yentube" &&
+        (urlName === "git"
+          ? "https://github.com/YennieJ/clone_youtube"
+          : "https://yentube.store/")) ||
+      (projectName === "Netflix" &&
+        urlName === "git" &&
+        "https://github.com/YennieJ/clone_netflix") ||
+      (projectName === "Cards" &&
+        urlName === "git" &&
+        "https://github.com/YennieJ/homepage-typescript") ||
+      (projectName === "Portfolio" &&
+        urlName === "git" &&
+        "https://github.com/YennieJ/portfolio");
+
     window.open(url);
   };
 
   return (
     <div>
       <AiFillGithub
-        className="text-4xl  hover:fill-black float-right "
-        onClick={(e) => onClick(e, "git")}
+        className="text-4xl  hover:fill-black float-right  cursor-pointer "
+        onClick={(e) => onClick("git")}
       />
-      <AiOutlineLink
-        className="text-4xl  hover:fill-black float-right mr-3 "
-        onClick={(e) => onClick(e, "site")}
-      />
+      {CD && (
+        <AiOutlineLink
+          className="text-4xl  hover:fill-black float-right mr-3  cursor-pointer "
+          onClick={(e) => onClick("site")}
+        />
+      )}
     </div>
   );
 };

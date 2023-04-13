@@ -11,14 +11,8 @@ const Used = ({ linkName }: IUsed) => {
   };
   const extend = {
     Yentube: ["Axios", "React Query", "React Hook Form", "Recoil", "Netlify"],
-    Netflix: [
-      "Axios",
-      "React Router",
-      "React Query",
-      "React Hook Form",
-      "Netlify",
-    ],
-    Cards: ["Axios", "React Query", "React Hook Form", "Recoil", "Netlify"],
+    Netflix: ["Axios", "React Router", "React Query", "React Hook Form"],
+    Cards: ["Axios", "React Query", "React Hook Form", "Recoil"],
   };
 
   let basicUsed: string[] = [];
