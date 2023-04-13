@@ -4,7 +4,7 @@ const Profile = () => {
   return (
     <div
       id="profile"
-      className="flex justify-center items-center h-screen  bg-lime-300 "
+      className="flex justify-center items-center h-screen  bg-stone-800 "
     >
       Profile
     </div>
