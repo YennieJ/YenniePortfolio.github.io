@@ -2,7 +2,7 @@ import React from "react";
 
 import Nav from "./components/Nav";
 import Profile from "./pages/Profile";
-import Projects from "./pages/Projects";
+import Projects from "./pages/Projects/Projects";
 import Yentube from "./pages/Yentube";
 import Netflix from "./pages/Netflix";
 import Cards from "./pages/Cards";

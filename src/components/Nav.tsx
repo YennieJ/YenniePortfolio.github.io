@@ -11,9 +11,7 @@ const Nav = () => {
             spy={true}
             smooth={true}
             duration={300}
-            // className="w-full pl-8 hover:bg-black "
-            // activeClass="w-full pl-8 bg-black cursor-default"
-            className="w-full px-7 hover:bg-black cursor-pointer "
+            className="w-full px-6 hover:bg-black cursor-pointer "
             activeClass="bg-black cursor-default"
           >
             Profile
@@ -26,15 +24,15 @@ const Nav = () => {
             spy={true}
             smooth={true}
             duration={100}
-            className="w-full px-5 hover:bg-black cursor-pointer "
-            activeClass="w-full px-8 bg-black cursor-default"
+            className="w-full px-4 hover:bg-black cursor-pointer "
+            activeClass="w-full bg-black cursor-default"
           >
             Projects
           </Link>
           <ul className="flex h-full text-2xl 2xl:flex 2xl:flex-col 2xl:w-full 2xl:text-4xl">
             <li className="group flex relative leading-loose cursor-pointer">
               <Link
-                to="yentube"
+                to="Yentube"
                 spy={true}
                 smooth={true}
                 duration={100}

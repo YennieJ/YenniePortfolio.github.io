@@ -3,7 +3,7 @@ import React from "react";
 const Yentube = () => {
   return (
     <div
-      id="yentube"
+      id="Yentube"
       className="flex  flex-col justify-center items-center bg-rose-700"
     >
       Yentube
