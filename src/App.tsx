@@ -4,7 +4,7 @@ import Nav from "./components/Nav";
 import Profile from "./pages/Profile";
 import Projects from "./pages/Projects/Projects";
 
-import Portfolio from "./pages/Portfolio";
+import Portfolio from "./pages/Portfolio/Portfolio";
 
 function App() {
   return (

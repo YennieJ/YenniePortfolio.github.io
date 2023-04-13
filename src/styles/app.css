@@ -1039,6 +1039,14 @@ video {
     width: 700px;
   }
 
+  .md\:w-\[750px\] {
+    width: 750px;
+  }
+
+  .md\:w-\[730px\] {
+    width: 730px;
+  }
+
   .md\:text-3xl {
     font-size: 1.875rem;
     line-height: 2.25rem;
