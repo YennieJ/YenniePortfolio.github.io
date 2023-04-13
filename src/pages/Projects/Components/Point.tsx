@@ -5,7 +5,9 @@ interface IPonint {
 }
 const Point = ({ linkName }: IPonint) => {
   const basic = {
-    Yentube: ["Google APIs", "반응형", "무한 스크롤", "Dark Mode"],
+    Yentube: ["Google APIs", "반응형", "무한 스크롤"],
+    Netflix: ["Movie Api", "무한 슬라이드", "Login", "Signup"],
+    Cards: ["Firebase", "좋아요", "Dark Mode"],
   };
 
   let basicUsed: string[] = [];

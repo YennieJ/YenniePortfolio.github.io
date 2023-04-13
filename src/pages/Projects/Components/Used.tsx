@@ -6,10 +6,19 @@ interface IUsed {
 const Used = ({ linkName }: IUsed) => {
   const basic = {
     Yentube: ["React", "CSS Module", "JavaScript"],
-    temp: ["A", "CSS Module", "JavaScript"],
+    Netflix: ["React", "Styled Components", "TypeScript"],
+    Cards: ["React", "Styled Components", "TypeScript"],
   };
   const extend = {
     Yentube: ["Axios", "React Query", "React Hook Form", "Recoil", "Netlify"],
+    Netflix: [
+      "Axios",
+      "React Router",
+      "React Query",
+      "React Hook Form",
+      "Netlify",
+    ],
+    Cards: ["Axios", "React Query", "React Hook Form", "Recoil", "Netlify"],
   };
 
   let basicUsed: string[] = [];

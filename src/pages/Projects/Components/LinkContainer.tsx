@@ -15,7 +15,7 @@ const LinkContainer = ({ linkName, children }: ILinkCintauner) => {
       className="flex flex-col justify-between w-96 h-[500px] my-3.5 px-5 py-7 bg-black cursor-pointer "
     >
       <img src={require(`../Images/${linkName}.png`)} alt="" />
-      <div className="text-3xl my-2">{linkName}</div>
+      <div className="text-3xl my-3">{linkName}</div>
       {children}
     </Link>
   );

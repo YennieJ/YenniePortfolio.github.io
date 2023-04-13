@@ -47,7 +47,7 @@ const Nav = () => {
             </li>
             <li className="group flex relative leading-loose cursor-pointer">
               <Link
-                to="netflix"
+                to="Netflix"
                 spy={true}
                 smooth={true}
                 duration={100}
@@ -62,7 +62,7 @@ const Nav = () => {
             </li>
             <li className="group flex relative leading-loose cursor-pointer">
               <Link
-                to="cards"
+                to="Cards"
                 spy={true}
                 smooth={true}
                 duration={100}
