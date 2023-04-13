@@ -3,35 +3,36 @@ import React from "react";
 import Container from "./Components/Container";
 import Point from "./Components/Point";
 import Used from "./Components/Used";
-import SiteContainer from "./Components/SiteContainer";
+import LinkContainer from "./Components/LinkContainer";
 
 const Projects = () => {
+  const containerClassName = "flex flex-col justify-between h-2/5 mb-3";
   return (
     <div
       id="projects"
       className="flex flex-wrap justify-around items-center min-h-screen h-full max-h-fit py-20 bg-green-950 2xl:py-5 "
     >
       <Container linkName="Yentube">
-        <div className="flex flex-col justify-between h-2/5 mb-5">
+        <div className={containerClassName}>
           <Used linkName="Yentube" />
           <Point linkName="Yentube" />
         </div>
-        <SiteContainer projectName="Yentube" CD />
+        <LinkContainer projectName="Yentube" CD />
       </Container>
 
       <Container linkName="Netflix">
-        <div className="flex flex-col justify-between h-2/5 mb-5">
+        <div className={containerClassName}>
           <Used linkName="Netflix" />
           <Point linkName="Netflix" />
         </div>
-        <SiteContainer projectName="Netflix" />
+        <LinkContainer projectName="Netflix" />
       </Container>
       <Container linkName="Cards">
-        <div className="flex flex-col justify-between h-2/5 mb-5">
+        <div className={containerClassName}>
           <Used linkName="Cards" />
           <Point linkName="Cards" />
         </div>
-        <SiteContainer projectName="Cards" />
+        <LinkContainer projectName="Cards" />
       </Container>
     </div>
   );

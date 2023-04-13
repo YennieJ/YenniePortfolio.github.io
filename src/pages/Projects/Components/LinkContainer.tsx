@@ -1,12 +1,13 @@
 import React from "react";
+
 import { AiFillGithub, AiOutlineLink } from "react-icons/ai";
 
-interface ISiteContainer {
+interface ILinkContainer {
   CD?: boolean;
   projectName: string;
 }
 
-const SiteContainer = ({ CD, projectName }: ISiteContainer) => {
+const LinkContainer = ({ CD, projectName }: ILinkContainer) => {
   const onClick = (urlName: string) => {
     const url: any =
       (projectName === "Yentube" &&
@@ -26,15 +27,21 @@ const SiteContainer = ({ CD, projectName }: ISiteContainer) => {
     window.open(url);
   };
 
+  const gitHubClassName =
+    "float-right text-4xl cursor-pointer hover:fill-green-800";
+
+  const portfolioClassName = "mb-5 text-6xl cursor-pointer hover:fill-black";
   return (
     <div>
       <AiFillGithub
-        className="text-4xl  hover:fill-black float-right  cursor-pointer "
+        className={
+          projectName === "Portfolio" ? portfolioClassName : gitHubClassName
+        }
         onClick={(e) => onClick("git")}
       />
       {CD && (
         <AiOutlineLink
-          className="text-4xl  hover:fill-black float-right mr-3  cursor-pointer "
+          className={`${gitHubClassName} mr-3`}
           onClick={(e) => onClick("site")}
         />
       )}
@@ -42,4 +49,4 @@ const SiteContainer = ({ CD, projectName }: ISiteContainer) => {
   );
 };
 
-export default SiteContainer;
+export default LinkContainer;

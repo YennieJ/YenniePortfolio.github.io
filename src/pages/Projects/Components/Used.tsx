@@ -4,10 +4,13 @@ interface IUsed {
   linkName: string;
 }
 const Used = ({ linkName }: IUsed) => {
+  const Portfolio = linkName === "Portfolio";
+
   const basic = {
     Yentube: ["React", "CSS Module", "JavaScript"],
     Netflix: ["React", "Styled Components", "TypeScript"],
     Cards: ["React", "Styled Components", "TypeScript"],
+    Portfolio: ["React", "Tailwindcss", "TypeScript", "TypeScript"],
   };
   const extend = {
     Yentube: ["Axios", "React Query", "React Hook Form", "Recoil", "Netlify"],
@@ -25,17 +28,23 @@ const Used = ({ linkName }: IUsed) => {
     keys === linkName && values.map((value) => extendUsed.push(value));
   }
 
-  const used =
-    "inline-block px-1.5 py-0.5 mr-1 border rounded-lg text-xs font-normal";
+  const used = `inline-block px-1.5 py-0.5 mr-1 border rounded-lg text-xs font-normal`;
+
+  const portfolioUsed =
+    "px-2 py-1 border-2 rounded-lg text-xl font-bold md:text-3xl";
 
   return (
-    <div>
+    <div
+      className={`${
+        Portfolio && "flex justify-around w-[480px] md:w-[700px]"
+      }   `}
+    >
       {basicUsed.map((item, i) => (
-        <span className={used} key={i}>
+        <span className={Portfolio ? portfolioUsed : used} key={i}>
           {item}
         </span>
       ))}
-      <br />
+      {!Portfolio && <br />}
       {extendUsed.map((item, i) => (
         <span className={used} key={i}>
           {item}
