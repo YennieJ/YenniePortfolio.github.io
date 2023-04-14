@@ -3,19 +3,10 @@ import React from "react";
 import entire from "./Images/entire.png";
 import entireCode from "./Images/entireCode.png";
 
-import container from "./Images/container.png";
-import containerCode from "./Images/containerCode.png";
-
-import used from "./Images/used.png";
-import usedCode from "./Images/usedCode.png";
-
-import link from "./Images/link.png";
-import linkCode from "./Images/linkCode.png";
-
 import LinkContainer from "../Projects/Components/LinkContainer";
-
 import Used from "../Projects/Components/Used";
 import Table from "./Components/Table";
+import ExplainContainer from "./Components/ExplainContainer";
 
 const Portfolio = () => {
   return (
@@ -44,38 +35,9 @@ const Portfolio = () => {
             <img src={entireCode} alt="entireCode" />
           </div>
           <div className="px-3 ">
-            <div className="flex justify-between">
-              <div className="px-3">
-                <div className="text-2xl">Container</div>
-                <div className="text-base font-semibold border-b border-slate-700 mb-3">
-                  projectName으로 썸네일과 제목을 정하고 JSX를 사용 할 수 있게
-                  children 사용
-                </div>
-                <img src={containerCode} alt="" />
-              </div>
-              <img src={container} alt="container" className="w-1/3 " />
-            </div>
-            <div className="flex justify-between">
-              <div className="px-3">
-                <div className="text-2xl">Used</div>
-                <div className="text-base font-semibold border-b border-slate-700 mb-3">
-                  projectName과 동일한 이름의 배열을 찾아 map 사용
-                </div>
-                <img src={usedCode} alt="" />
-              </div>
-              <img src={used} alt="container" className="w-1/3" />
-            </div>
-            <div className="flex justify-between">
-              <div className="px-3">
-                <div className="text-2xl">LikeContainer</div>
-                <div className="text-base font-semibold border-b border-slate-700 mb-3">
-                  projectName에 따라 깃허브 주소를 변경하고 props로 CD의 유무를
-                  파악해서 UI
-                </div>
-                <img src={linkCode} alt="" />
-              </div>
-              <img src={link} alt="container" className="w-1/3 " />
-            </div>
+            <ExplainContainer title="ProjectContainer" />
+            <ExplainContainer title="Used" />
+            <ExplainContainer title="LinkContainer" />
           </div>
         </div>
       </div>

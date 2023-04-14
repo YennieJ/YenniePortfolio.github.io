@@ -1,11 +1,11 @@
 import React, { ReactNode } from "react";
 
-interface IContainer {
+interface IProjectContainer {
   projectName: string;
   children: ReactNode;
 }
 
-const Container = ({ projectName, children }: IContainer) => {
+const ProjectContainer = ({ projectName, children }: IProjectContainer) => {
   return (
     <div className="flex flex-col w-96 h-[500px] my-3.5 px-5 py-7 bg-black">
       <img src={require(`../Images/${projectName}.png`)} alt="" />
@@ -15,4 +15,4 @@ const Container = ({ projectName, children }: IContainer) => {
   );
 };
 
-export default Container;
+export default ProjectContainer;
