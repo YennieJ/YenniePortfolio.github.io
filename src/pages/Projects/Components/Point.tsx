@@ -1,9 +1,9 @@
 import React from "react";
 
 interface IPonint {
-  linkName: string;
+  projectName: string;
 }
-const Point = ({ linkName }: IPonint) => {
+const Point = ({ projectName }: IPonint) => {
   const basic = {
     Yentube: ["Google APIs", "반응형", "무한 스크롤"],
     Netflix: ["Movie Api", "무한 슬라이드", "Login", "Signup"],
@@ -13,7 +13,7 @@ const Point = ({ linkName }: IPonint) => {
   let basicUsed: string[] = [];
 
   for (const [keys, values] of Object.entries(basic)) {
-    keys === linkName && values.map((value) => basicUsed.push(value));
+    keys === projectName && values.map((value) => basicUsed.push(value));
   }
 
   return (

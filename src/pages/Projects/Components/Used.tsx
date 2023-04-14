@@ -1,10 +1,10 @@
 import React from "react";
 
 interface IUsed {
-  linkName: string;
+  projectName: string;
 }
-const Used = ({ linkName }: IUsed) => {
-  const Portfolio = linkName === "Portfolio";
+const Used = ({ projectName }: IUsed) => {
+  const Portfolio = projectName === "Portfolio";
 
   const basic = {
     Yentube: ["React", "CSS Module", "JavaScript"],
@@ -23,20 +23,21 @@ const Used = ({ linkName }: IUsed) => {
   let extendUsed: string[] = [];
 
   for (const [keys, values] of Object.entries(basic)) {
-    keys === linkName && values.map((value) => basicUsed.push(value));
+    keys === projectName && values.map((value) => basicUsed.push(value));
   }
   for (const [keys, values] of Object.entries(extend)) {
-    keys === linkName && values.map((value) => extendUsed.push(value));
+    keys === projectName && values.map((value) => extendUsed.push(value));
   }
 
   const used = `inline-block px-1.5 py-0.5 mr-1 border rounded-lg text-xs font-normal`;
-
   const portfolioUsed =
     "px-2 py-1 border-2 rounded-lg text-xl font-bold md:text-3xl";
 
   return (
     <div
-      className={`${Portfolio && "flex justify-around w-[480px] md:w-[700px"}`}
+      className={`${
+        Portfolio && "flex justify-around w-[480px] md:w-[700px]"
+      }   `}
     >
       {basicUsed.map((item, i) => (
         <span className={Portfolio ? portfolioUsed : used} key={i}>

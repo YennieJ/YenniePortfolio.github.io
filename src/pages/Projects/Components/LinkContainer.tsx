@@ -3,8 +3,8 @@ import React from "react";
 import { AiFillGithub, AiOutlineLink } from "react-icons/ai";
 
 interface ILinkContainer {
-  CD?: boolean;
   projectName: string;
+  CD?: boolean;
 }
 
 const LinkContainer = ({ CD, projectName }: ILinkContainer) => {
@@ -31,18 +31,19 @@ const LinkContainer = ({ CD, projectName }: ILinkContainer) => {
     "float-right text-4xl cursor-pointer hover:fill-green-800";
 
   const portfolioClassName = "mb-5 text-6xl cursor-pointer hover:fill-black";
+
   return (
     <div>
       <AiFillGithub
         className={
           projectName === "Portfolio" ? portfolioClassName : gitHubClassName
         }
-        onClick={(e) => onClick("git")}
+        onClick={() => onClick("git")}
       />
       {CD && (
         <AiOutlineLink
           className={`${gitHubClassName} mr-3`}
-          onClick={(e) => onClick("site")}
+          onClick={() => onClick("site")}
         />
       )}
     </div>

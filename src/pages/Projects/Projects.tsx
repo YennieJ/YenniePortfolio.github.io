@@ -12,25 +12,25 @@ const Projects = () => {
       id="projects"
       className="flex flex-wrap justify-around items-center min-h-screen h-full max-h-fit py-20 bg-green-950 2xl:py-5 "
     >
-      <Container linkName="Yentube">
+      <Container projectName="Yentube">
         <div className={containerClassName}>
-          <Used linkName="Yentube" />
-          <Point linkName="Yentube" />
+          <Used projectName="Yentube" />
+          <Point projectName="Yentube" />
         </div>
         <LinkContainer projectName="Yentube" CD />
       </Container>
 
-      <Container linkName="Netflix">
+      <Container projectName="Netflix">
         <div className={containerClassName}>
-          <Used linkName="Netflix" />
-          <Point linkName="Netflix" />
+          <Used projectName="Netflix" />
+          <Point projectName="Netflix" />
         </div>
         <LinkContainer projectName="Netflix" />
       </Container>
-      <Container linkName="Cards">
+      <Container projectName="Cards">
         <div className={containerClassName}>
-          <Used linkName="Cards" />
-          <Point linkName="Cards" />
+          <Used projectName="Cards" />
+          <Point projectName="Cards" />
         </div>
         <LinkContainer projectName="Cards" />
       </Container>
