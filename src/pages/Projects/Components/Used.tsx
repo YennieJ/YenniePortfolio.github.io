@@ -12,6 +12,7 @@ const Used = ({ linkName }: IUsed) => {
     Cards: ["React", "Styled Components", "TypeScript"],
     Portfolio: ["React", "Tailwindcss", "TypeScript", "TypeScript"],
   };
+
   const extend = {
     Yentube: ["Axios", "React Query", "React Hook Form", "Recoil", "Netlify"],
     Netflix: ["Axios", "React Router", "React Query", "React Hook Form"],
@@ -35,21 +36,23 @@ const Used = ({ linkName }: IUsed) => {
 
   return (
     <div
-      className={`${
-        Portfolio && "flex justify-around w-[480px] md:w-[700px]"
-      }   `}
+      className={`${Portfolio && "flex justify-around w-[480px] md:w-[700px"}`}
     >
       {basicUsed.map((item, i) => (
         <span className={Portfolio ? portfolioUsed : used} key={i}>
           {item}
         </span>
       ))}
-      {!Portfolio && <br />}
-      {extendUsed.map((item, i) => (
-        <span className={used} key={i}>
-          {item}
-        </span>
-      ))}
+      {!Portfolio && (
+        <>
+          <br />
+          {extendUsed.map((item, i) => (
+            <span className={used} key={i}>
+              {item}
+            </span>
+          ))}
+        </>
+      )}
     </div>
   );
 };
