@@ -4,7 +4,7 @@ import { FaLightbulb } from "react-icons/fa";
 
 const Table = () => {
   return (
-    <div className="flex flex-col items-center w-[470px] text-neutral-800 md:w-[730px]">
+    <div className="flex flex-col items-center w-[470px] mb-4 text-neutral-800 md:w-[730px]">
       <div className="flex justify-between items-center w-full border-4 border-b-0 border-double border-pink-800 rounded-t-2xl bg-rose-100">
         <div className="flex-1 py-3 border-pink-800 border-r border-b text-center">
           <FaLightbulb className="inline fill-orange-600" /> 배운점

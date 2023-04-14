@@ -9,18 +9,23 @@ interface ILinkContainer {
 
 const LinkContainer = ({ CD, projectName }: ILinkContainer) => {
   const onClick = (urlName: string) => {
+    const yentube = projectName === "Yentube";
+    const netflix = projectName === "Netflix";
+    const cards = projectName === "Cards";
+    const portfolio = projectName === "Portfolio";
+
     const url: any =
-      (projectName === "Yentube" &&
+      (yentube &&
         (urlName === "git"
           ? "https://github.com/YennieJ/clone_youtube"
           : "https://yentube.store/")) ||
-      (projectName === "Netflix" &&
+      (netflix &&
         urlName === "git" &&
         "https://github.com/YennieJ/clone_netflix") ||
-      (projectName === "Cards" &&
+      (cards &&
         urlName === "git" &&
         "https://github.com/YennieJ/homepage-typescript") ||
-      (projectName === "Portfolio" &&
+      (portfolio &&
         urlName === "git" &&
         "https://github.com/YennieJ/portfolio");
 

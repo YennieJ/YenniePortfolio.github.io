@@ -18,7 +18,7 @@ const ExplainContainer = ({ title }: IExplainContainer) => {
     <div className="flex justify-between">
       <div className="px-3">
         <div className="text-2xl">{title}</div>
-        <div className="text-base font-semibold border-b border-slate-700 mb-3">
+        <div className="mb-3 border-b border-slate-700 text-base font-semibold">
           {content}
         </div>
         <img src={require(`../Images/${title}Code.png`)} alt="" />

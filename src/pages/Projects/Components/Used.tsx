@@ -31,7 +31,7 @@ const Used = ({ projectName }: IUsed) => {
 
   const used = `inline-block px-1.5 py-0.5 mr-1 border rounded-lg text-xs font-normal`;
   const portfolioUsed =
-    "px-2 py-1 border-2 rounded-lg text-xl font-bold md:text-3xl";
+    "px-2 py-1 mb-4 border-2 rounded-lg text-xl font-bold md:text-3xl";
 
   return (
     <div
