@@ -32,12 +32,10 @@ const Used = ({ projectName }: IUsed) => {
 
   const projectUsed = `inline-block px-1.5 py-0.5 mr-1 border rounded-lg text-xs font-normal`;
   const othersUsed =
-    "px-2 py-1 mb-4 border-2 rounded-lg text-xl font-bold md:text-3xl";
+    "flex items-center px-2 py-1 mx-1 mb-4 border-2 rounded-xl text-lg font-bold md:text-3xl";
 
   return (
-    <div
-      className={`${others && "flex justify-around w-[480px] md:w-[700px]"}   `}
-    >
+    <div className={`${others && "flex justify-center mb-4"}   `}>
       {basicUsed.map((item, i) => (
         <span className={others ? othersUsed : projectUsed} key={i}>
           {item}
