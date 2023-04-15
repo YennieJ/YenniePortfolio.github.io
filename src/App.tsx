@@ -8,7 +8,7 @@ import Portfolio from "./pages/Portfolio/Portfolio";
 
 function App() {
   return (
-    <div className="text-white text-2xl font-bold  h-full">
+    <div className="text-white text-2xl font-bold h-full">
       <Nav />
       <article className="w-full h-full 2xl:w-4/5">
         <Profile />

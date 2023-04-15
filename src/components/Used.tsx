@@ -4,9 +4,10 @@ interface IUsed {
   projectName: string;
 }
 const Used = ({ projectName }: IUsed) => {
-  const Portfolio = projectName === "Portfolio";
+  const others = projectName === "Portfolio" || projectName === "Profile";
 
   const basic = {
+    Profile: ["React", "JavaScript", "TypeScript", "Styled Components"],
     Yentube: ["React", "CSS Module", "JavaScript"],
     Netflix: ["React", "Styled Components", "TypeScript"],
     Cards: ["React", "Styled Components", "TypeScript"],
@@ -29,26 +30,24 @@ const Used = ({ projectName }: IUsed) => {
     keys === projectName && values.map((value) => extendUsed.push(value));
   }
 
-  const used = `inline-block px-1.5 py-0.5 mr-1 border rounded-lg text-xs font-normal`;
-  const portfolioUsed =
+  const projectUsed = `inline-block px-1.5 py-0.5 mr-1 border rounded-lg text-xs font-normal`;
+  const othersUsed =
     "px-2 py-1 mb-4 border-2 rounded-lg text-xl font-bold md:text-3xl";
 
   return (
     <div
-      className={`${
-        Portfolio && "flex justify-around w-[480px] md:w-[700px]"
-      }   `}
+      className={`${others && "flex justify-around w-[480px] md:w-[700px]"}   `}
     >
       {basicUsed.map((item, i) => (
-        <span className={Portfolio ? portfolioUsed : used} key={i}>
+        <span className={others ? othersUsed : projectUsed} key={i}>
           {item}
         </span>
       ))}
-      {!Portfolio && (
+      {!others && (
         <>
           <br />
           {extendUsed.map((item, i) => (
-            <span className={used} key={i}>
+            <span className={projectUsed} key={i}>
               {item}
             </span>
           ))}

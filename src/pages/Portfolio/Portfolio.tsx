@@ -4,7 +4,7 @@ import entire from "./Images/entire.png";
 import entireCode from "./Images/entireCode.png";
 
 import LinkContainer from "../Projects/Components/LinkContainer";
-import Used from "../Projects/Components/Used";
+import Used from "../../components/Used";
 import Table from "./Components/Table";
 import ExplainContainer from "./Components/ExplainContainer";
 
@@ -12,7 +12,7 @@ const Portfolio = () => {
   return (
     <div
       id="Portfolio"
-      className="flex flex-col items-center h-full py-20 bg-rose-700 2xl:py-5"
+      className="flex flex-col items-center h-full py-20 bg-rose-700 2xl:py-10"
     >
       <LinkContainer projectName="Portfolio" />
       <Used projectName="Portfolio" />

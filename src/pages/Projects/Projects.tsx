@@ -2,7 +2,7 @@ import React from "react";
 
 import ProjectContainer from "./Components/ProjectContainer";
 import Point from "./Components/Point";
-import Used from "./Components/Used";
+import Used from "../../components/Used";
 import LinkContainer from "./Components/LinkContainer";
 
 const Projects = () => {
