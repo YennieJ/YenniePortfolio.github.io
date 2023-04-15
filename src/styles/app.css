@@ -609,15 +609,13 @@ video {
 .rounded-lg {
   border-radius: 0.5rem;
 }
-.rounded-sm {
-  border-radius: 0.125rem;
-}
-.rounded-xl {
-  border-radius: 0.75rem;
-}
 .rounded-b-2xl {
   border-bottom-right-radius: 1rem;
   border-bottom-left-radius: 1rem;
+}
+.rounded-b-xl {
+  border-bottom-right-radius: 0.75rem;
+  border-bottom-left-radius: 0.75rem;
 }
 .rounded-t-2xl {
   border-top-left-radius: 1rem;
@@ -626,10 +624,6 @@ video {
 .rounded-t-xl {
   border-top-left-radius: 0.75rem;
   border-top-right-radius: 0.75rem;
-}
-.rounded-b-xl {
-  border-bottom-right-radius: 0.75rem;
-  border-bottom-left-radius: 0.75rem;
 }
 .border {
   border-width: 1px;
@@ -697,9 +691,6 @@ video {
 .fill-stone-500 {
   fill: #78716c;
 }
-.p-3 {
-  padding: 0.75rem;
-}
 .px-1 {
   padding-left: 0.25rem;
   padding-right: 0.25rem;
@@ -748,22 +739,19 @@ video {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
 }
-.py-7 {
-  padding-top: 1.75rem;
-  padding-bottom: 1.75rem;
-}
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
-.pb-4 {
-  padding-bottom: 1rem;
-}
-.pt-10 {
-  padding-top: 2.5rem;
+.py-7 {
+  padding-top: 1.75rem;
+  padding-bottom: 1.75rem;
 }
 .pb-10 {
   padding-bottom: 2.5rem;
+}
+.pt-10 {
+  padding-top: 2.5rem;
 }
 .text-center {
   text-align: center;
@@ -834,20 +822,8 @@ video {
 .decoration-double {
   text-decoration-style: double;
 }
-.decoration-4 {
-  text-decoration-thickness: 4px;
-}
-.decoration-1 {
-  text-decoration-thickness: 1px;
-}
-.decoration-2 {
-  text-decoration-thickness: 2px;
-}
 .underline-offset-2 {
   text-underline-offset: 2px;
-}
-.underline-offset-4 {
-  text-underline-offset: 4px;
 }
 .opacity-0 {
   opacity: 0;
@@ -921,11 +897,6 @@ video {
     width: 730px;
   }
 
-  .md\:px-6 {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-  }
-
   .md\:px-7 {
     padding-left: 1.75rem;
     padding-right: 1.75rem;
@@ -974,19 +945,14 @@ video {
     flex-direction: column;
   }
 
-  .\32xl\:py-5 {
-    padding-top: 1.25rem;
-    padding-bottom: 1.25rem;
-  }
-
-  .\32xl\:py-7 {
-    padding-top: 1.75rem;
-    padding-bottom: 1.75rem;
-  }
-
   .\32xl\:py-10 {
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
+  }
+
+  .\32xl\:py-5 {
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
   }
 
   .\32xl\:text-4xl {
