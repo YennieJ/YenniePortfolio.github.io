@@ -2,6 +2,7 @@ import React from "react";
 
 import { FaLightbulb } from "react-icons/fa";
 
+// 배운점과 개선점을 UI
 const Table = () => {
   return (
     <div className="flex flex-col items-center w-[470px] mb-4 text-neutral-800 md:w-[730px]">

@@ -3,11 +3,12 @@ import React from "react";
 import entire from "./Images/entire.png";
 import entireCode from "./Images/entireCode.png";
 
-import LinkContainer from "../Projects/Components/LinkContainer";
-import Used from "../../components/Used";
+import LinkContainer from "../../Components/LinkContainer";
+import Used from "../../Components/Used";
 import Table from "./Components/Table";
 import ExplainContainer from "./Components/ExplainContainer";
 
+// portfolio에 대한 코드 설명
 const Portfolio = () => {
   return (
     <div
@@ -18,8 +19,8 @@ const Portfolio = () => {
       <Used projectName="Portfolio" />
       <Table />
       <div className="w-full pt-10 px-3 text-neutral-800 md:px-7">
-        <div className="py-4 px-3 rounded-t-xl bg-rose-100">
-          <h2 className="text-3xl leading-loose ">재사용 Components</h2>
+        <div className="px-3 py-4 rounded-t-xl bg-rose-100">
+          <h2 className="text-3xl leading-loose">재사용 Components</h2>
           <p className="text-base font-semibold underline decoration-double decoration underline-offset-2">
             진행했던 프로젝트를 바탕으로 최소한의 중복을 생각하며 코드짜는데
             집중했다.

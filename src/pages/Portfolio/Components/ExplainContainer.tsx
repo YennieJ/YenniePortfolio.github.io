@@ -3,6 +3,9 @@ import React from "react";
 interface IExplainContainer {
   title: string;
 }
+
+// 반복되는 UI 코드 설명 component
+
 const ExplainContainer = ({ title }: IExplainContainer) => {
   const project = title === "ProjectContainer";
   const used = title === "Used";

@@ -2,8 +2,8 @@ import React from "react";
 
 import ProjectContainer from "./Components/ProjectContainer";
 import Point from "./Components/Point";
-import Used from "../../components/Used";
-import LinkContainer from "./Components/LinkContainer";
+import Used from "../../Components/Used";
+import LinkContainer from "../../Components/LinkContainer";
 
 const Projects = () => {
   const containerClassName = "flex flex-col justify-between h-2/5 mb-3";

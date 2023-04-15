@@ -6,6 +6,10 @@ interface ILinkContainer {
   projectName: string;
   CD?: boolean;
 }
+// pages > project
+// pages > portfolio
+
+// 프로젝트 이름에 따라 외부 링크 연결
 
 const LinkContainer = ({ CD, projectName }: ILinkContainer) => {
   const onClick = (urlName: string) => {
@@ -32,9 +36,9 @@ const LinkContainer = ({ CD, projectName }: ILinkContainer) => {
     window.open(url);
   };
 
+  // for css
   const gitHubClassName =
-    "float-right text-4xl cursor-pointer hover:fill-green-800";
-
+    "float-right text-4xl cursor-pointer hover:fill-green-800 ";
   const portfolioClassName = "mb-5 text-6xl cursor-pointer hover:fill-black";
 
   return (

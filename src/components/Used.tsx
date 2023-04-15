@@ -3,9 +3,17 @@ import React from "react";
 interface IUsed {
   projectName: string;
 }
+
+// pages > profile
+// pages > projects
+// pages > portfolio
+
+// 어떤 툴을 사용했는지 보여준다.
 const Used = ({ projectName }: IUsed) => {
+  //for css
   const others = projectName === "Portfolio" || projectName === "Profile";
 
+  //기본적으로 사용한 툴
   const basic = {
     Profile: ["React", "JavaScript", "TypeScript", "Styled Components"],
     Yentube: ["React", "CSS Module", "JavaScript"],
@@ -14,12 +22,14 @@ const Used = ({ projectName }: IUsed) => {
     Portfolio: ["React", "Tailwindcss", "TypeScript", "TypeScript"],
   };
 
+  // 그 외 추가로 사용한 툴
   const extend = {
     Yentube: ["Axios", "React Query", "React Hook Form", "Recoil", "Netlify"],
     Netflix: ["Axios", "React Router", "React Query", "React Hook Form"],
     Cards: ["Axios", "React Query", "React Hook Form", "Recoil"],
   };
 
+  //props 이름과 사용한 툴에 같은 이름을 찾아 그 값을 맵하여 보여준다.
   let basicUsed: string[] = [];
   let extendUsed: string[] = [];
 
@@ -30,6 +40,7 @@ const Used = ({ projectName }: IUsed) => {
     keys === projectName && values.map((value) => extendUsed.push(value));
   }
 
+  // for css
   const projectUsed = `inline-block px-1.5 py-0.5 mr-1 border rounded-lg text-xs font-normal`;
   const othersUsed =
     "flex items-center px-2 py-1 mx-1 mb-4 border-2 rounded-xl text-lg font-bold md:text-3xl";

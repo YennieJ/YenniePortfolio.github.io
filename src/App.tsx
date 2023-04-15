@@ -1,9 +1,8 @@
 import React from "react";
 
-import Nav from "./components/Nav";
-import Profile from "./pages/Profile";
+import Nav from "./Components/Nav";
+import Profile from "./pages/Profile/Profile";
 import Projects from "./pages/Projects/Projects";
-
 import Portfolio from "./pages/Portfolio/Portfolio";
 
 function App() {

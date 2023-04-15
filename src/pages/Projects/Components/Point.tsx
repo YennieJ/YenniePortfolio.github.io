@@ -3,6 +3,8 @@ import React from "react";
 interface IPonint {
   projectName: string;
 }
+
+// 주요 기능을 보여준다.
 const Point = ({ projectName }: IPonint) => {
   const basic = {
     Yentube: ["Google APIs", "반응형", "무한 스크롤"],
