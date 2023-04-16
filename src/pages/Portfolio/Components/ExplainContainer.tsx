@@ -13,7 +13,7 @@ const ExplainContainer = ({ title }: IExplainContainer) => {
 
   const content =
     (project &&
-      "projectName으로 썸네일과 제목을 정하고 JSX를 사용 할 수 있게 children 사용") ||
+      "projectName으로 썸네일과 제목을 정하고 JSX를 사용할 수 있게 children 사용") ||
     (used && "projectName과 동일한 이름의 배열을 찾아 map 사용") ||
     (link &&
       "projectName에 따라 깃허브 주소를 변경하고 props로 CD의 유무를 파악해서 UI");

@@ -22,7 +22,7 @@ const Portfolio = () => {
         <div className="px-3 py-4 rounded-t-xl bg-rose-100">
           <h2 className="text-3xl leading-loose">재사용 Components</h2>
           <p className="text-base font-semibold underline decoration-double decoration underline-offset-2">
-            진행했던 프로젝트를 바탕으로 최소한의 중복을 생각하며 코드짜는데
+            진행했던 프로젝트를 바탕으로 최소한의 중복을 생각하며 코드 짜는데
             집중했다.
           </p>
         </div>
@@ -30,7 +30,7 @@ const Portfolio = () => {
           <img src={entire} alt="entire" className="mb-4" />
           <div className="px-3">
             <div className="mb-3 border-b border-slate-700 text-lg font-semibold">
-              props로 projectName을 넘겨주어 썸네일,제목,사용한 툴,링크를
+              props로 projectName을 넘겨주어 썸네일, 제목, 사용한 툴, 링크를
               결정한다.
             </div>
             <img src={entireCode} alt="entireCode" />

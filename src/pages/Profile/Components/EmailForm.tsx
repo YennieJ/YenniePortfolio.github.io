@@ -12,7 +12,7 @@ const EmailForm = ({ emailOpen, setEmailOpen }: IEmailForm) => {
   const form = useRef<any>(null);
 
   const closeEmailForm = () => {
-    if (window.confirm("뒤로 돌아갈까요?") === true) {
+    if (window.confirm("이 창을 나가시겠습니까?") === true) {
       return (
         form.current.reset(),
         setEmailOpen(false),

@@ -29,7 +29,7 @@ const Used = ({ projectName }: IUsed) => {
     Cards: ["Axios", "React Query", "React Hook Form", "Recoil"],
   };
 
-  //props 이름과 사용한 툴에 같은 이름을 찾아 그 값을 맵하여 보여준다.
+  //props 이름과 프로젝트 이름이 같은 배열을 찾아 사용한 툴을 맵핑하여 보여준다.
   let basicUsed: string[] = [];
   let extendUsed: string[] = [];
 
