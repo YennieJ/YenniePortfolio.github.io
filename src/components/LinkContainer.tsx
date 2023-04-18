@@ -15,20 +15,16 @@ const LinkContainer = ({ CD, projectName }: ILinkContainer) => {
   const onClick = (urlName: string) => {
     const yentube = projectName === "Yentube";
     const netflix = projectName === "Netflix";
-    const cards = projectName === "Cards";
+    const yenpin = projectName === "YenPin";
     const portfolio = projectName === "Portfolio";
 
     const url: any =
       (yentube &&
         (urlName === "git"
-          ? "https://github.com/YennieJ/clone_youtube"
+          ? "https://github.com/YennieJ/Yentube"
           : "https://yentube.store/")) ||
-      (netflix &&
-        urlName === "git" &&
-        "https://github.com/YennieJ/clone_netflix") ||
-      (cards &&
-        urlName === "git" &&
-        "https://github.com/YennieJ/homepage-typescript") ||
+      (netflix && urlName === "git" && "https://github.com/YennieJ/Yenflix") ||
+      (yenpin && urlName === "git" && "https://github.com/YennieJ/YenPin") ||
       (portfolio &&
         urlName === "git" &&
         "https://github.com/YennieJ/portfolio");

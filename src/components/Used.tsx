@@ -26,7 +26,13 @@ const Used = ({ projectName }: IUsed) => {
   const extend = {
     Yentube: ["Axios", "React Query", "React Hook Form", "Recoil", "Netlify"],
     Netflix: ["Axios", "React Router", "React Query", "React Hook Form"],
-    YenPin: ["Axios", "React Query", "React Hook Form", "Recoil"],
+    YenPin: [
+      "Axios",
+      "React Router",
+      "React Query",
+      "React Hook Form",
+      "Recoil",
+    ],
   };
 
   //props 이름과 프로젝트 이름이 같은 배열을 찾아 사용한 툴을 맵핑하여 보여준다.

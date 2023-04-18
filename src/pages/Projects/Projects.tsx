@@ -32,7 +32,7 @@ const Projects = () => {
           <Used projectName="YenPin" />
           <Point projectName="YenPin" />
         </div>
-        <LinkContainer projectName="Cards" />
+        <LinkContainer projectName="YenPin" />
       </ProjectContainer>
     </div>
   );
