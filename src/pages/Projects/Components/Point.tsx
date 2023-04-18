@@ -9,7 +9,7 @@ const Point = ({ projectName }: IPoint) => {
   const basic = {
     Yentube: ["Google APIs", "반응형", "무한 스크롤"],
     Netflix: ["Movie Api", "무한 슬라이드", "Login", "Signup"],
-    YenPin: ["Firebase", "좋아요", "Dark Mode"],
+    YenPin: ["Firebase", "좋아요", "Dark Mode", "Pagination"],
   };
 
   let basicUsed: string[] = [];
