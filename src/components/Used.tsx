@@ -15,10 +15,10 @@ const Used = ({ projectName }: IUsed) => {
 
   //기본적으로 사용한 툴
   const basic = {
-    Profile: ["React", "JavaScript", "TypeScript", "Styled Components"],
-    Yentube: ["React", "CSS Module", "JavaScript"],
+    Profile: ["React", "Styled Components", "JavaScript", "TypeScript"],
+    Yentube: ["React", "CSS Modules", "JavaScript"],
     Netflix: ["React", "Styled Components", "TypeScript"],
-    Cards: ["React", "Styled Components", "TypeScript"],
+    YenPin: ["React", "Styled Components", "TypeScript"],
     Portfolio: ["React", "Tailwindcss", "TypeScript", "TypeScript"],
   };
 
@@ -26,7 +26,7 @@ const Used = ({ projectName }: IUsed) => {
   const extend = {
     Yentube: ["Axios", "React Query", "React Hook Form", "Recoil", "Netlify"],
     Netflix: ["Axios", "React Router", "React Query", "React Hook Form"],
-    Cards: ["Axios", "React Query", "React Hook Form", "Recoil"],
+    YenPin: ["Axios", "React Query", "React Hook Form", "Recoil"],
   };
 
   //props 이름과 프로젝트 이름이 같은 배열을 찾아 사용한 툴을 맵핑하여 보여준다.

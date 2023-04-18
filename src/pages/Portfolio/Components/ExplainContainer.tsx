@@ -17,6 +17,7 @@ const ExplainContainer = ({ title }: IExplainContainer) => {
     (used && "projectName과 동일한 이름의 배열을 찾아 map 사용") ||
     (link &&
       "projectName에 따라 깃허브 주소를 변경하고 props로 CD의 유무를 파악해서 UI");
+
   return (
     <div className="flex justify-between">
       <div className="px-3">

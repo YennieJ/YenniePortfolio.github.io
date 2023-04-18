@@ -1,15 +1,15 @@
 import React from "react";
 
-interface IPonint {
+interface IPoint {
   projectName: string;
 }
 
 // 주요 기능을 보여준다.
-const Point = ({ projectName }: IPonint) => {
+const Point = ({ projectName }: IPoint) => {
   const basic = {
     Yentube: ["Google APIs", "반응형", "무한 스크롤"],
     Netflix: ["Movie Api", "무한 슬라이드", "Login", "Signup"],
-    Cards: ["Firebase", "좋아요", "Dark Mode"],
+    YenPin: ["Firebase", "좋아요", "Dark Mode"],
   };
 
   let basicUsed: string[] = [];

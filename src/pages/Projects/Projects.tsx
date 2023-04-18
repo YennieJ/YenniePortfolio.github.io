@@ -27,10 +27,10 @@ const Projects = () => {
         </div>
         <LinkContainer projectName="Netflix" />
       </ProjectContainer>
-      <ProjectContainer projectName="Cards">
+      <ProjectContainer projectName="YenPin">
         <div className={containerClassName}>
-          <Used projectName="Cards" />
-          <Point projectName="Cards" />
+          <Used projectName="YenPin" />
+          <Point projectName="YenPin" />
         </div>
         <LinkContainer projectName="Cards" />
       </ProjectContainer>
