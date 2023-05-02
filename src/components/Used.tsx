@@ -19,7 +19,7 @@ const Used = ({ projectName }: IUsed) => {
     Yentube: ["React", "CSS Modules", "JavaScript"],
     Netflix: ["React", "Styled Components", "TypeScript"],
     YenPin: ["React", "Styled Components", "TypeScript"],
-    Portfolio: ["React", "Tailwindcss", "TypeScript", "TypeScript"],
+    Portfolio: ["React", "Tailwindcss", "TypeScript", "Github CI/CD"],
   };
 
   // 그 외 추가로 사용한 툴

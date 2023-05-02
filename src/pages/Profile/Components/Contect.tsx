@@ -2,6 +2,7 @@ import React from "react";
 
 import { CgMail } from "react-icons/cg";
 import { BsGithub } from "react-icons/bs";
+import { AiOutlinePhone } from "react-icons/ai";
 
 interface IContect {
   setEmailOpen: React.Dispatch<React.SetStateAction<boolean>>;
@@ -17,8 +18,12 @@ const Contect = ({ setEmailOpen }: IContect) => {
 
   return (
     <div className="flex justify-center mb-8 ">
-      <div className="mr-4 ">이예진</div>
+      <div className="mr-4 font-bold">이예진</div>
       <ul className="pl-4 border-l-4 ">
+        <li>
+          <AiOutlinePhone className="inline-block mr-2" />
+          <span className="font-normal">010-4712-1293</span>
+        </li>
         <li>
           <CgMail className="inline-block mr-2" />
           <span

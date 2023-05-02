@@ -2,7 +2,6 @@ import React, { useState } from "react";
 
 import Contect from "./Components/Contect";
 import Keyword from "./Components/Keyword";
-import Introduce from "./Components/Introduce";
 import Used from "../../Components/Used";
 import EmailForm from "./Components/EmailForm";
 
@@ -25,7 +24,7 @@ const Profile = () => {
           <Contect setEmailOpen={setEmailOpen} />
           <Keyword />
         </div>
-        <Introduce />
+
         <Used projectName="Profile" />
       </div>
       <EmailForm emailOpen={emailOpen} setEmailOpen={setEmailOpen} />
